@@ -1,0 +1,21 @@
+name: nlp4sales2-service-broker
+memory: 128M
+disk-quota: 128M
+services:
+  - auditlogsb
+  - brokeruaa
+env:
+  SBF_BROKER_CREDENTIALS_HASH: >
+    {
+      "seda": "sha256:9gcvFokzglCbBgJUBtk6uPsAord8wjYrzZxqBwsUIpw=:pgiH4qy34PTAjqo14dCLOTECWoyuu5sg9fUxA09knos="
+    }
+  SBF_SERVICE_CONFIG: >
+    {
+      "nlp4sales2": {
+        "extend_credentials": {
+          "shared": {
+            "uri": "https://mybrokertestapp1.cfapps.eu10.hana.ondemand.com"
+          }
+        }
+      }
+    }

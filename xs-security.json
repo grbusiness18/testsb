@@ -1,0 +1,28 @@
+{
+  "xsappname": "nlp4sales",
+  "tenant-mode": "shared",
+  "scopes": [
+        {
+              "name": "uaa.user",
+              "description": "UAA"
+        },
+        {
+              "name": "$XSAPPNAME.read",
+              "description": "read"
+        },
+        {
+              "name": "$XSAPPNAME.clone",
+              "description": "read"
+        }
+  ],
+  "role-templates": [
+    {
+        "name": "Token_Exchange",
+        "description": "UAA",
+        "scope-references": ["uaa.user"]
+    }
+  ],  
+  "authorities": [
+        "$XSAPPNAME.read"
+  ]
+}

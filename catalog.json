@@ -1,0 +1,23 @@
+{
+  "services": [
+    {
+      "name": "nlp4sales2",
+      "description": "Natural Language Processing for Sales",
+      "bindable": true,
+      "plans": [
+        {
+          "name": "default",
+          "description": "Default Plan",
+          "id": "5f3f37b3-6adb-42be-a2cc-a8f0d9045068"
+        }
+      ],
+      "metadata": {
+        "sapservice": {
+          "sap.cloud.service": "com.sap.it.nlp4sales2",
+          "sap.cloud.service.alias": "nlp4sales2"
+        }
+      },
+      "id": "822e6121-c958-4955-b1ec-e5d2a4ba3162"
+    }
+  ]
+}

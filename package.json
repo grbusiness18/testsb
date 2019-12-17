@@ -1,0 +1,16 @@
+{
+  "name": "nlp4sales-service-broker",
+  "version": "1.0.0",
+  "description": "Service Broker for NLP4Sales",
+  "dependencies": {
+    "@sap/sbf": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "start-broker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.wdf.sap.corp/ML-innovation-SG/nlp4sales-service-broker.git"
+  }
+}
